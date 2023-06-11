@@ -314,14 +314,14 @@
         <h2>Contact us</h2>
     </div>
 
-    <form action="#">
-        <input type="text" placeholder="Your Name" required>
-        <input type="text" placeholder="Your Email" required>
-        <input type="text" placeholder="Your Address" required>
-        <input type="number" placeholder="+Code-Phone Number" required>
-        <textarea name="" id="" cols="30" rows="10" placeholder="How We Can help You" required></textarea>
+    <form method="post" autocomplete="off" name="google-sheet" id="myform">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="email" placeholder="Your Email" required>
+        <input type="text" name="address" placeholder="Your Address" required>
+        <input type="number" name="phone" placeholder="+Code-Phone Number" required>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="How We Can help You" required></textarea>
         <div class="btn-box formBtn">
-            <button type="submit" class="btn">Send Message</button>
+            <button type="submit" class="btn" onclick="reserform()">Send Message</button>
         </div>
         
     </form>
@@ -335,6 +335,17 @@
     <a href="#home"><i class='bx bx-arrow-from-bottom'></i></a>
 </footer>
 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxLikZO6QRFZKAYcklLeJ0Y9l_brJJDT7saNvL86B8v-CE36ztqnab9gn00dX6EH9xX/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You As Soon As Possible..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 
 
