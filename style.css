@@ -633,12 +633,15 @@ td{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
   }
   
   .photo-container img {
     width: 250px;
     height: 250px;
-    padding: 30px;
+    border: 2px solid var(--hover-color);
+    border-radius: 15px;
+    margin:15px;
   }
 
   .photo-text{
