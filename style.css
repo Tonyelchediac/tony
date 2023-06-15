@@ -635,26 +635,23 @@ td{
     justify-content: center;
     padding: 30px;
   }
-  
-  .photo-container img {
-    width: 250px;
-    height: 250px;
-    border: 2px solid var(--hover-color);
-    border-radius: 15px;
-    margin:15px;
-  }
-
-  .photo-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .photo-text p {
+  .services {
+    padding: 100px 10px;
     text-align: center;
-    width: 250px;
-    height: 250px;
-    padding: 30px;
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .service {
+    margin-bottom: 40px;
+  }
+  
+  .service img {
+    max-width: 200px;
+    margin-bottom: 20px;
   }
 
 /*---contact section-----------------------------------------------------------------------------*/
