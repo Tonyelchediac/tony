@@ -64,4 +64,36 @@ window.addEventListener("scroll",function(){
 })
 
 
-////contact form/////////////////////////////////////////////////////
+////hamburger form/////////////////////////////////////////////////////
+
+const burger = document.querySelector('.burger');
+const navlinks = document.querySelector('.navlinks');
+const navlinksItems = navlinks.querySelectorAll('li');
+
+let isnavlinksOpen = false;
+
+burger.addEventListener('click', () => {
+  if (!isnavlinksOpen) {
+    opennavlinks();
+  } else {
+    closenavlinks();
+  }
+});
+
+function opennavlinks() {
+  navlinks.classList.add('open');
+  document.body.classList.add('menu-open');
+  isnavlinksOpen = true;
+}
+
+function closeMenu() {
+  menu.classList.remove('open');
+  document.body.classList.remove('menu-open');
+  isMenuOpen = false;
+}
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    closeMenu();
+  });
+});
