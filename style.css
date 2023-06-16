@@ -82,7 +82,7 @@ header.sticky{
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
-    padding-left: 4rem;
+    padding-left: 1.5rem;
 }
 
 .logo a{
@@ -709,7 +709,6 @@ footer a i{
         font-size: .9rem;
         font-weight: 700;
         letter-spacing: 1px;
-        padding-left: 2rem;
     }
 
     nav ul.menu {
@@ -724,7 +723,7 @@ footer a i{
       top: 50%;
       right: 20px;
       transform: translateY(-50%);
-      z-index: 1000;
+      z-index: 999;
     }
     
     nav .burger .line {
