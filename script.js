@@ -67,23 +67,23 @@ window.addEventListener("scroll",function(){
 ////hamburger form/////////////////////////////////////////////////////
 
 const burger = document.querySelector('.burger');
-const navlinks = document.querySelector('.navlinks');
-const navlinksItems = navlinks.querySelectorAll('li');
+const menu = document.querySelector('.menu');
+const menuItems = menu.querySelectorAll('li'); document.querySelectorAll('.menu li');
 
-let isnavlinksOpen = false;
+let isMenuOpen = false;
 
 burger.addEventListener('click', () => {
-  if (!isnavlinksOpen) {
-    opennavlinks();
+  if (!isMenuOpen) {
+    openMenu();
   } else {
-    closenavlinks();
+    closeMenu();
   }
 });
 
-function opennavlinks() {
-  navlinks.classList.add('open');
+function openMenu() {
+  menu.classList.add('open');
   document.body.classList.add('menu-open');
-  isnavlinksOpen = true;
+  isMenuOpen = true;
 }
 
 function closeMenu() {
@@ -96,4 +96,19 @@ menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', () => {
     closeMenu();
   });
+
 });
+
+///////////////////////////////////////////////////////////////////
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  menu.classList.toggle('show');
+  menuItems.forEach((item, index) => {
+    if (item.style.animation) {
+      item.style.animation = '';
+    } else {
+      item.style.animation = `menuItemFadeIn 0.5s ease forwards ${index / 7 + 0.3}s`;
+    }
+  });
+});
+
