@@ -107,8 +107,15 @@ burger.addEventListener('click', () => {
     if (item.style.animation) {
       item.style.animation = '';
     } else {
-      item.style.animation = `menuItemFadeIn 0.5s ease forwards ${index / 7 + 0.3}s`;
+      item.style.animation = `menuItemFadeIn 0.2s ease forwards ${index / 7 + 0.3}s`;
     }
   });
 });
 
+
+//////////////////////////////////////////////////////////////////
+
+setTimeout(function() {
+  var span = document.getElementById("mySpan");
+  span.innerHTML = "tony";
+}, 2000);
