@@ -119,3 +119,31 @@ setTimeout(function() {
   var span = document.getElementById("mySpan");
   span.innerHTML = "tony";
 }, 2000);
+
+/////////scrollreveal////////////////////////////
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '100px',
+  duration: 1500,
+  delay: 400,
+  reset: true,
+})
+
+sr.reveal('.home-content')
+sr.reveal('.home-image' ,{origin:'left'})
+
+
+sr.reveal('.about-content')
+sr.reveal('.img-about' ,{origin:'left'})
+
+sr.reveal('.skills' ,{origin:'left'})
+
+sr.reveal('.edu')
+sr.reveal('.education-content' ,{origin:'left'})
+
+sr.reveal('.services' ,{origin:'left'})
+sr.reveal('.services h3')
+sr.reveal('.services p')
+
+sr.reveal('.main-text')
