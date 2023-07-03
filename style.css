@@ -643,7 +643,7 @@ footer{
 
 footer p{
     color: #bdbdbd;
-    font-size: 50%;
+    font-size: 80%;
 }
 
 footer a{
@@ -882,6 +882,11 @@ footer a i{
       position: relative; overflow: hidden; z-index: 1;
       border: 2px solid var(--hover-color);
   }
+
+  footer p{
+    color: #bdbdbd;
+    font-size: 50%;
+}
 
     #contact{
         padding-top: 10rem;
