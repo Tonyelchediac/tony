@@ -125,7 +125,7 @@ setTimeout(function() {
 const sr = ScrollReveal({
   origin: 'top',
   distance: '100px',
-  duration: 1000,
+  duration: 1500,
   delay: 400,
   reset: true,
 })
