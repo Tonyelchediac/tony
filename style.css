@@ -555,12 +555,6 @@ span.perc{
 
 /*---project section-----------------------------------------------------------------------------*/
 
-.photo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-  }
   .services {
     padding: 100px 10px;
     text-align: center;
@@ -579,6 +573,56 @@ span.perc{
     max-width: 200px;
     margin-bottom: 20px;
   }
+
+  .alfa{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    grid-gap: 4em;
+    margin-top: 5rem;
+  }
+
+  .lign1-1{
+    width: 70%;
+    margin-bottom: 20%;
+    border: 2px solid var(--hover-color);
+  }
+
+  .lign2-1{
+    width: 70%;
+    margin-top: 20%;
+    border: 2px solid var(--hover-color);
+  }
+
+  .lign1-2{
+    width: 70%;
+    margin-bottom: 20%;
+    border: 2px solid var(--hover-color);
+  }
+
+  .lign2-2{
+    width: 70%;
+    margin-top: 20%;
+    border: 2px solid var(--hover-color);
+  }
+
+  .lign1-3{
+    width: 70%;
+    margin-bottom: 20%;
+    border: 2px solid var(--hover-color);
+  }
+
+  .lign2-3{
+    width: 70%;
+    margin-top: 20%;
+    border: 2px solid var(--hover-color);
+  }
+
+  .logo1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #12f7ff;
+}
 
 /*---contact section-----------------------------------------------------------------------------*/
 
@@ -830,6 +874,10 @@ footer a i{
 
     .skills{
       padding-bottom: 12rem;
+    }
+
+    .alfa{
+      grid-template-columns: 1fr;
     }
 
     .photo-container {
