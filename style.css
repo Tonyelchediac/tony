@@ -640,8 +640,8 @@ span.perc{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 25px;
+  width: 100px;
+  height: 30px;
   margin-top: 4rem;
   background: var(--hover-color);
   color: var(--bg-color);
