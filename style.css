@@ -289,25 +289,34 @@ section{
 /*multi traanslate*/
 
 .langs{
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
   width: 180px;
   height: 35px;
 }
 
-.langs a{
+.langs summary{
   display: inline-flex;
-  width: 45px;
+  width: 160px;
   height: 80%;
-  font-size: .8rem;
+  font-size: .7rem;
   justify-content: center;
   align-items: center;
   background: var(--bg-color);
   color: var(--text-color);
   border: 2px solid var(--hover-color);
-  box-sizing: 0 0 0.3rem #12f7ff;
   border-radius: 5px;
+  box-sizing: 0 0 0.3rem #12f7ff;
+}
+
+.langs summary i{
+  padding-left: 8px;
+}
+
+.langs a{
+  color: #f5f5f5;
+  margin: 50px 0px 0px 22px;
 }
 
 .langs a.active{
@@ -497,6 +506,9 @@ span.perc{
   margin-top: 5px;
 }
 
+/**/
+
+
 
 /*---educations section-----------------------------------------------------------------------------*/
 
@@ -622,6 +634,25 @@ span.perc{
     margin-bottom: 30px;
     font-size: 2rem;
     color: #12f7ff;
+}
+
+.btn-box- .btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 25px;
+  margin-top: 4rem;
+  background: var(--hover-color);
+  color: var(--bg-color);
+  font-size: .6rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: .6s;
+  box-shadow: var(--neon-box-shadow);
+  border-radius: 5px;
+  position: relative; overflow: hidden; z-index: 1;
+  border: 2px solid var(--hover-color);
 }
 
 /*---contact section-----------------------------------------------------------------------------*/
@@ -930,6 +961,10 @@ footer a i{
       position: relative; overflow: hidden; z-index: 1;
       border: 2px solid var(--hover-color);
   }
+
+  .btn:hover{
+    color: var(--hover-color);
+}
 
   footer p{
     color: #bdbdbd;
