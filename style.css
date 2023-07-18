@@ -473,6 +473,10 @@ section{
     justify-content: center;
 }
 
+.skillshome{
+  margin-bottom: 5rem;
+}
+
 .container1{
   position: relative;
   max-width: 50%;
@@ -766,6 +770,7 @@ transform: rotate(117deg);
   .services {
     padding: 100px 10px;
     text-align: center;
+    margin: 0 1rem 0 1rem;
   }
   
   .services h2 {
@@ -773,8 +778,33 @@ transform: rotate(117deg);
     margin-bottom: 40px;
   }
   
-  .service {
-    margin-bottom: 40px;
+  .service1 {
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+  }
+  .service2 {
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+  }
+  .service3 {
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+  }
+
+  .service p {
+    margin: 10px;
   }
   
   .service img {
@@ -783,51 +813,16 @@ transform: rotate(117deg);
   }
 
   .alfa{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    grid-gap: 4em;
-    margin-top: 5rem;
-  }
-
-  .lign1-1{
-    width: 70%;
-    margin-bottom: 20%;
-    border: 2px solid var(--hover-color);
-  }
-
-  .lign2-1{
-    width: 70%;
-    margin-top: 20%;
-    border: 2px solid var(--hover-color);
-  }
-
-  .lign1-2{
-    width: 70%;
-    margin-bottom: 20%;
-    border: 2px solid var(--hover-color);
-  }
-
-  .lign2-2{
-    width: 70%;
-    margin-top: 20%;
-    border: 2px solid var(--hover-color);
-  }
-
-  .lign1-3{
-    width: 70%;
-    margin-bottom: 20%;
-    border: 2px solid var(--hover-color);
-  }
-
-  .lign2-3{
-    width: 70%;
-    margin-top: 20%;
-    border: 2px solid var(--hover-color);
+    flex-wrap: wrap;
+    grid-gap: 2rem;
   }
 
   .logo1 {
     margin-bottom: 30px;
+    margin-top: 1rem;
     font-size: 2rem;
     color: #12f7ff;
 }
@@ -836,9 +831,10 @@ transform: rotate(117deg);
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 35px;
   margin-top: 4rem;
+  margin-bottom: 2rem;
   background: var(--hover-color);
   color: var(--bg-color);
   font-size: .6rem;
