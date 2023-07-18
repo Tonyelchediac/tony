@@ -558,7 +558,8 @@ section{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
-  grid-gap: 2em;
+  grid-gap: 4em;
+  margin-left: 22%;
 }
 
 .circle-wrap {
