@@ -327,14 +327,14 @@ section{
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    width: 300px;
     height: 45px;
 }
 
 .social-icons a{
     display: inline-flex;
-    width: 50px;
-    height: 100%;
+    width: 40px;
+    height: 90%;
     justify-content: center;
     align-items: center;
     background: var(--bg-color);
