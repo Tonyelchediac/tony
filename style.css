@@ -353,7 +353,7 @@ section{
 }
 
 .social-icons a:hover{
-    color: var(--bg-color);
+  color: var(--bg-color);
 }
 
 .social-icons a::before{
@@ -1079,7 +1079,6 @@ footer a i{
       transform: translateY(0);
     }
     
-
     .home{
         grid-template-columns: 1fr;
         padding-top: 110px;
