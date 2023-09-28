@@ -990,7 +990,7 @@ footer a i{
       .menu li a {
         color: var(--text-color);
         font-weight: 500;
-        padding: 15px 15px 15px;
+        padding: 0px 15px;
       }
     
       nav .menu li a:hover{
@@ -1073,7 +1073,7 @@ footer a i{
     }
     
     nav .menu.open li {
-      padding-top: 30px;
+      padding-top: 40px;
       opacity: 0;
       transform: translateY(-20px);
       transition: opacity 0.3s ease, transform 0.3s ease;
