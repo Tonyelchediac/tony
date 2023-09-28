@@ -990,7 +990,7 @@ footer a i{
       .menu li a {
         color: var(--text-color);
         font-weight: 500;
-        padding: 15px 15px;
+        padding: 15px 15px 15px;
       }
     
       nav .menu li a:hover{
@@ -1065,7 +1065,7 @@ footer a i{
       top: 0;
       left: 0;
       width: 100%;
-      height: auto;
+      height: /*auto*/ 100%;
       background-color: rgb(37,8,33);
       opacity: 0.9;
       padding: 40px;
