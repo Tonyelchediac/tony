@@ -968,6 +968,10 @@ footer a i{
     padding: 20px 0;
 }
 
+.social-icons a:hover{
+  color: var(--hover-color);
+}
+
    .home-content h1{
         font-size: 1.7rem;
         padding-bottom: 20px;
@@ -1062,7 +1066,8 @@ footer a i{
       left: 0;
       width: 100%;
       height: auto;
-      background-color: var(--bg-color);
+      background-color: rgb(37,8,33);
+      opacity: 0.9;
       padding: 40px;
       z-index: 999;
     }
