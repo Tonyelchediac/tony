@@ -72,7 +72,7 @@ button:active {
     border: none;
     background: none;
     outline: none;
-    color: white;
+    color: grey;
     font-size: 15px;
     padding: 24px 46px 24px 26px;
   }
