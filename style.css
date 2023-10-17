@@ -507,14 +507,14 @@ section{
   position: relative;
   display: block;
   height: 100%;
-  width: 95%;
+  width: 90%;
   border-radius: 6px;
   background: var(--hover-color);
   animation: progress 0.4s ease-in-out forwards;
   opacity: 0;
 }
 .skill-per.css{
-  width: 85%;
+  width: 90%;
   animation-delay: 0.1s;
 }
 .skill-per.javascript{
@@ -522,7 +522,11 @@ section{
   animation-delay: 0.2s;
 }
 .skill-per.cprog{
-  width: 75%;
+  width: 85%;
+  animation-delay: 0.3s;
+}
+.skill-per.java{
+  width: 65%;
   animation-delay: 0.3s;
 }
 @keyframes progress {
