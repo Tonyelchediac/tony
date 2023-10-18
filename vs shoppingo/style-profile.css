@@ -332,11 +332,10 @@ button:active {
       border: 6px solid white ;
     }
   
-    .navigation ul li .text-cart{
+    .navigation ul li .cart{
       color:white;
-      position: fixed;
-      top: 96%;
-      text-align: center;
+      padding-top: 40%;
+      font-weight: 500;
     }
 
 
@@ -429,18 +428,18 @@ button:active {
           height: 60px;
           width: 60px;
           top: -30%;
-          right: 65%;
+          right: 63.5%;
           position: absolute;
           border-radius: 50%;
           border: 6px solid white;
         }
       
-        .navigation ul li .text-cart{
+        .navigation ul li .cart{
           color:white;
-          position: fixed;
-          top: 95%;
-          left: 46%;
-          text-align: center;
+          padding-top: 40%;
+          font-weight: 500;
+          font-size: 15px;
+          width: 10%;
         }
       
         .items{

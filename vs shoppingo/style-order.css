@@ -192,11 +192,12 @@ button:active {
       border: 6px solid white ;
     }
   
-    .navigation ul li .text-cart{
+    .navigation ul li .cart{
       color:white;
-      position: fixed;
-      top: 96%;
-      text-align: center;
+      padding-top: 40%;
+      font-weight: 500;
+      font-size: 15px;
+      width: 10%;
     }
 
     .initial{
@@ -364,12 +365,12 @@ button:active {
           border: 6px solid white;
         }
       
-        .navigation ul li .text-cart{
+        .navigation ul li .cart{
           color:white;
-          position: fixed;
-          top: 95%;
-          left: 46%;
-          text-align: center;
+          padding-top: 40%;
+          font-weight: 500;
+          font-size: 15px;
+          width: 10%;
         }
       
         .items{
