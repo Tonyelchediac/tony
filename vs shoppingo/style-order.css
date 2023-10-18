@@ -126,146 +126,6 @@ button:active {
     padding: 15px 15px;
   }
 
-  /* profile */
-
-  .profile{
-    width: 100%;
-    height: 100%;
-    padding-left: 42%;
-    padding-top: 12%;
-  }
-
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
-  }
-  
-  .title {
-    font-size: 28px;
-    color: #2AF598;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-  }
-  
-  .title::before,.title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: #2AF598;
-  }
-  
-  .title::before {
-    width: 18px;
-    height: 18px;
-    background-color: #2AF598;
-  }
-  
-  .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
-  }
-  
-  .message, .signin {
-    color: rgba(88, 87, 87, 0.822);
-    font-size: 14px;
-  }
-  
-  .signin {
-    text-align: center;
-  }
-  
-  .signin a {
-    color: greenyellow;
-  }
-  
-  .signin a:hover {
-    text-decoration: underline #2AF598;
-  }
-  
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
-  }
-  
-  .form label {
-    position: relative;
-  }
-  
-  .form label .input {
-    width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    color: grey;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-  
-  .form label .input:placeholder-shown + span {
-    top: 15px;
-    font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,.form label .input:valid + span {
-    top: 30px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
-  .form label .input:valid + span {
-    color: #2AF598;
-  }
-  
-  .submit {
-    border: none;
-    outline: none;
-    background-color: #2AF598;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transform: .3s ease;
-  }
-  
-  .submit:hover {
-    background-color: #2AF598;
-  }
-  
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-  
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
-  }
-
   footer{
     position: fixed;
     top: 91%;
@@ -326,7 +186,7 @@ button:active {
       height: 60px;
       width: 60px;
       top: -30%;
-      right: 59%;
+      right: 38%;
       position: absolute;
       border-radius: 50%;
       border: 6px solid white ;
@@ -339,6 +199,75 @@ button:active {
       text-align: center;
     }
 
+    .initial{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+
+    .image-order{
+        margin-left: 10%;
+    }
+
+    .item-name{
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .titleoforder{
+        margin-left: 50%;
+        width: 300%;
+    }
+
+    .price{
+        font-weight: 700;
+        color: red;
+    }
+
+    .first-item{
+        margin-top: 10%;
+        margin-right: 30%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .plus{
+        cursor: pointer;
+    }
+
+    .num{
+        font-weight: 700;
+    }
+
+    .minus{
+        cursor: pointer;
+    }
+
+    .quantity{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        width: 30%;
+        margin-left: 120%;
+    }
+
+    .ordernow{
+        margin: 10% 0 10% 20%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+
+    .orderit{
+        width: 50%;
+        height: 50px;
+        border-radius: 10rem;
+        background: var(--alfa);
+        color: white;
+        font-weight: 700;
+        font-size: 15px;
+        border: 1% solid ;
+    }
 
 
 
@@ -429,7 +358,7 @@ button:active {
           height: 60px;
           width: 60px;
           top: -30%;
-          right: 65%;
+          right: 22%;
           position: absolute;
           border-radius: 50%;
           border: 6px solid white;
@@ -468,8 +397,65 @@ button:active {
         margin-right: auto;
         width: 100%;
         max-width: 250px;
-        height: auto;
+        height: 75px;
       }
+
+      .initial{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+
+    .item-name{
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+
+    .titleoforder{
+        margin-left: 50%;
+        width: 300%;
+        font-size: 7px;
+    }
+
+    .price{
+        font-weight: 700;
+        color: red;
+        font-size: 1.5em;
+    }
+
+    .first-item{
+        margin-top: 10%;
+        margin-right: 30%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .quantity{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        width: 30%;
+        margin-left: 150%;
+    }
+
+    .ordernow{
+        margin: 10% 0 35% 10%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+
+    .orderit{
+        width: 80%;
+        height: 30px;
+        border-radius: 10rem;
+        background: var(--alfa);
+        color: white;
+        font-weight: 700;
+        font-size: 10px;
+        border: 1% solid ;
+    }
       
         
       }
