@@ -846,6 +846,10 @@ transform: rotate(117deg);
   border: 2px solid var(--hover-color);
 }
 
+.btn-box- .btn:hover{
+  color: var(--hover-color);
+}
+
 /*---contact section-----------------------------------------------------------------------------*/
 
 #contact{
