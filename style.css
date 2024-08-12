@@ -601,6 +601,11 @@ footer p{
         width: 20rem;
     }
 
+    .skills-counting{
+        gap: 3rem;
+        margin: 75px;
+    }
+
     .education-section-part {
         width: 80%; 
         max-width: 600px;
@@ -616,6 +621,10 @@ footer p{
 
     .contact-container textarea{
         width: 45vh;
+    }
+
+    .contact-container button{
+        width: 20vh;
     }
 
     footer p{
