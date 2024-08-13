@@ -245,40 +245,45 @@
                 <h2>EVERYTHING YOU WANT TO</h2>
             </div>
             <div class="contact-container">
-                <form onsubmit="return validateForm();">
+                <form id="contactForm">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
                     <input type="text" id="address" name="address" placeholder="Your Address" required>
                     <input type="tel" id="phone" name="phone" placeholder="+Code-Phone Number" required>
                     <textarea id="message" name="message" cols="30" rows="10" placeholder="How can we help you?" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <div class="btn-box formBtn">
+                        <button type="button" class="btn" onclick="sendMail()">Send Message</button>
+                    </div>
                 </form>
+                
                 <script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
                 <script>
                     (function() {
                         emailjs.init("QUVaIP-QY2pkKySli");
                     })();
                 
-                    function validateForm() {
-                        const form = document.getElementById("contactForm");
-                        if (form.checkValidity()) {
-                            sendMail();
-                            return false;
-                        } else {
-                            alert("Please fill out all required fields.");
-                            return false;
-                        }
-                    }
-        
                     function sendMail() {
+                        // Get all input fields and textarea
+                        let name = document.getElementById("name").value;
+                        let email = document.getElementById("email").value;
+                        let address = document.getElementById("address").value;
+                        let phone = document.getElementById("phone").value;
+                        let message = document.getElementById("message").value;
+                
+                        // Validate that all fields are filled
+                        if (name === "" || email === "" || address === "" || phone === "" || message === "") {
+                            alert("Please fill out all fields before sending the message.");
+                            return; // Stop function execution if validation fails
+                        }
+                
                         let params = {
-                            name: document.getElementById("name").value,
-                            email: document.getElementById("email").value,
-                            address: document.getElementById("address").value,
-                            phone: document.getElementById("phone").value,
-                            message: document.getElementById("message").value
+                            name: name,
+                            email: email,
+                            address: address,
+                            phone: phone,
+                            message: message
                         };
-        
+                
                         emailjs.send("service_almgaw2", "template_ivf6mnm", params)
                             .then(function(response) {
                                 alert("Your message has been sent successfully!");
@@ -289,6 +294,7 @@
                             });
                     }
                 </script>
+                
             </div>
         </section>
         
