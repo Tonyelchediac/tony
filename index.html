@@ -253,6 +253,7 @@
                     <textarea id="message" name="message" cols="30" rows="10" placeholder="How can we help you?" required></textarea>
                     <div class="btn-box formBtn">
                         <button type="button" class="btn" onclick="sendMail()">Send Message</button>
+                        <div id="statusMessage" style="color: red; margin-top: 10px;"></div>
                     </div>
                 </form>
                 
@@ -270,11 +271,18 @@
                         let phone = document.getElementById("phone").value;
                         let message = document.getElementById("message").value;
                 
+                        // Get the status message container
+                        let statusMessage = document.getElementById("statusMessage");
+                
                         // Validate that all fields are filled
                         if (name === "" || email === "" || address === "" || phone === "" || message === "") {
-                            alert("Please fill out all fields before sending the message.");
+                            statusMessage.textContent = "Please fill out all fields before sending the message.";
+                            statusMessage.style.color = "red";
                             return; // Stop function execution if validation fails
                         }
+                
+                        // Clear previous status message
+                        statusMessage.textContent = "Please wait...";
                 
                         let params = {
                             name: name,
@@ -286,14 +294,17 @@
                 
                         emailjs.send("service_almgaw2", "template_ivf6mnm", params)
                             .then(function(response) {
-                                alert("Your message has been sent successfully!");
+                                statusMessage.textContent = "Your message has been sent successfully!";
+                                statusMessage.style.color = "green";
                                 document.getElementById("contactForm").reset();
                             }, function(error) {
+                                statusMessage.textContent = "An error occurred. Please try again later.";
+                                statusMessage.style.color = "red";
                                 console.log("Error sending email:", error);
-                                alert("An error occurred. Please try again later.");
                             });
                     }
                 </script>
+                
                 
             </div>
         </section>
