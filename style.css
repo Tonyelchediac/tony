@@ -491,6 +491,10 @@ nav svg {
     padding: 20px;
 }
 
+#contactForm{
+    text-align: center;
+}
+
 .contact-container input,
 .contact-container textarea {
     width: 100%;
