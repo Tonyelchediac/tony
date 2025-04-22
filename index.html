@@ -3,321 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png" type="x-icon">
-    <link rel="stylesheet" href="style.css">
     <title>Tony's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="cvAndImages/pp.jpg" type="image/x-icon">
 </head>
 <body>
-    <!-- header section -->
     <header>
-        <nav>
-            <div class="logo">
-                Tony
+        <nav class="navbar">
+            <div class="nav-brand">Tony's Portfolio</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                </svg>
-            </label>
-            <label for="sidebar-active" id="overlay"></label>
-            <div class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
-                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                    </svg>
-                </label>
-                <a href="#Home">Home</a>
-                <a href="#About">About</a>
-                <a href="#Skills">Skills</a>
-                <a href="#Education">Education</a>
-                <a href="#Portfolio">Portfolio</a>
-                <a href="#Contact">Contact</a>
-                
-            </div>
-            <div class="hire-me-button">
-                <a href="tel:+96171096971"><button>Hire Me</button></a>
-            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
-    <!-- location Button -->
-     <div class="location-button">
-        <a href="#Home"><?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2" id="Layer_2"><path class="cls-1" d="M16.47,15.12,26.34,25a1,1,0,0,1-1.41,1.41l-9.06-9.06-8.8,8.8a1,1,0,0,1-1.41,0h0a1,1,0,0,1,0-1.42l9.61-9.61A.85.85,0,0,1,16.47,15.12Z"/><path class="cls-1" d="M16.47,5.54l9.87,9.88a1,1,0,0,1-1.41,1.41L15.87,7.77l-8.8,8.8a1,1,0,0,1-1.41,0h0a1,1,0,0,1,0-1.41l9.61-9.62A.85.85,0,0,1,16.47,5.54Z"/></g></svg></a>
-     </div>
-    <!-- home section -->
-     <section id="Home">
-        <div class="home-container">
-            <div class="col-1-content">
-                <img src="images/profile.JPG" alt="">
-            </div>
-            <div class="col-2-content">
-                <h1>I'm</h1>
-                <h2>Tony Al Chediac</h2>
-                <div class="marquee">
-                    <marquee scrollamount="20" direction="left">Software Engineering Student</marquee>
-                </div>
-                <a href="#"><button>Download CV</button></a>
-            <div class="social-media-icons">
-                <!-- facebook -->
-                <a href="https://facebook.com/toni.chediac"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64  H288z"/></svg></a>
-                <!-- intagram -->
-                <a href="https://www.instagram.com/elchediac_toni"><?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M83,23a22,22,0,0,1,22,22V83a22,22,0,0,1-22,22H45A22,22,0,0,1,23,83V45A22,22,0,0,1,45,23H83m0-8H45A30.09,30.09,0,0,0,15,45V83a30.09,30.09,0,0,0,30,30H83a30.09,30.09,0,0,0,30-30V45A30.09,30.09,0,0,0,83,15Z"/><path class="cls-1" d="M90.14,32a5.73,5.73,0,1,0,5.73,5.73A5.73,5.73,0,0,0,90.14,32Z"/><path class="cls-1" d="M64.27,46.47A17.68,17.68,0,1,1,46.6,64.14,17.7,17.7,0,0,1,64.27,46.47m0-8A25.68,25.68,0,1,0,90,64.14,25.68,25.68,0,0,0,64.27,38.47Z"/></svg></a>
-                <!-- linked in -->
-                 <a href="https://www.linkedin.com/in/toni-al-chediac-2b9787204"><?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 0h24v24H0z" fill="none"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill-rule="nonzero"/></g></svg></a>
-                <!-- whatsapp -->
-                <a href="https://wa.link/5xpmy6"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M373.295,307.064c-6.37,-3.188 -37.687,-18.596 -43.526,-20.724c-5.838,-2.126 -10.084,-3.187 -14.331,3.188c-4.246,6.376 -16.454,20.725 -20.17,24.976c-3.715,4.251 -7.431,4.785 -13.8,1.594c-6.37,-3.187 -26.895,-9.913 -51.225,-31.616c-18.935,-16.89 -31.72,-37.749 -35.435,-44.126c-3.716,-6.377 -0.397,-9.824 2.792,-13c2.867,-2.854 6.371,-7.44 9.555,-11.16c3.186,-3.718 4.247,-6.377 6.37,-10.626c2.123,-4.252 1.062,-7.971 -0.532,-11.159c-1.591,-3.188 -14.33,-34.542 -19.638,-47.298c-5.171,-12.419 -10.422,-10.737 -14.332,-10.934c-3.711,-0.184 -7.963,-0.223 -12.208,-0.223c-4.246,0 -11.148,1.594 -16.987,7.969c-5.838,6.377 -22.293,21.789 -22.293,53.14c0,31.355 22.824,61.642 26.009,65.894c3.185,4.252 44.916,68.59 108.816,96.181c15.196,6.564 27.062,10.483 36.312,13.418c15.259,4.849 29.145,4.165 40.121,2.524c12.238,-1.827 37.686,-15.408 42.995,-30.286c5.307,-14.882 5.307,-27.635 3.715,-30.292c-1.592,-2.657 -5.838,-4.251 -12.208,-7.44m-116.224,158.693l-0.086,0c-38.022,-0.015 -75.313,-10.23 -107.845,-29.535l-7.738,-4.592l-80.194,21.037l21.405,-78.19l-5.037,-8.017c-21.211,-33.735 -32.414,-72.726 -32.397,-112.763c0.047,-116.825 95.1,-211.87 211.976,-211.87c56.595,0.019 109.795,22.088 149.801,62.139c40.005,40.05 62.023,93.286 62.001,149.902c-0.048,116.834 -95.1,211.889 -211.886,211.889m180.332,-392.224c-48.131,-48.186 -112.138,-74.735 -180.335,-74.763c-140.514,0 -254.875,114.354 -254.932,254.911c-0.018,44.932 11.72,88.786 34.03,127.448l-36.166,132.102l135.141,-35.45c37.236,20.31 79.159,31.015 121.826,31.029l0.105,0c140.499,0 254.87,-114.366 254.928,-254.925c0.026,-68.117 -26.467,-132.166 -74.597,-180.352" id="WhatsApp-Logo"/></svg></a>
-                <!-- threads -->
-                <a href="https://www.threads.net/@elchediac_toni"><?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path d="M93.405,59.512c-0.529-0.254-1.067-0.498-1.612-0.732c-0.948-17.477-10.498-27.482-26.533-27.585c-0.073,0-0.145,0-0.218,0  c-9.591,0-17.568,4.094-22.477,11.543l8.819,6.049c3.668-5.565,9.424-6.751,13.663-6.751c0.049,0,0.098,0,0.147,0  c5.28,0.034,9.264,1.569,11.842,4.562c1.877,2.179,3.132,5.191,3.753,8.992c-4.681-0.796-9.744-1.04-15.155-0.73  c-15.245,0.878-25.046,9.77-24.388,22.124c0.334,6.267,3.456,11.658,8.791,15.18c4.51,2.977,10.32,4.433,16.357,4.104  c7.973-0.437,14.228-3.479,18.591-9.041c3.314-4.224,5.41-9.698,6.335-16.595c3.8,2.293,6.616,5.311,8.171,8.938  c2.645,6.166,2.799,16.3-5.47,24.561c-7.244,7.237-15.952,10.368-29.112,10.465c-14.598-0.108-25.639-4.79-32.817-13.915  C25.371,92.139,21.897,79.797,21.768,64c0.13-15.797,3.603-28.139,10.325-36.684c7.178-9.125,18.218-13.807,32.817-13.915  c14.704,0.109,25.937,4.813,33.39,13.983c3.654,4.496,6.41,10.151,8.226,16.744l10.334-2.757  c-2.202-8.115-5.666-15.108-10.38-20.908C96.925,8.707,82.951,2.684,64.946,2.559h-0.072C46.905,2.683,33.088,8.73,23.805,20.53  c-8.26,10.501-12.521,25.112-12.664,43.427l0,0.043l0,0.043c0.143,18.315,4.404,32.926,12.664,43.427  c9.283,11.8,23.1,17.847,41.069,17.971h0.072c15.975-0.111,27.235-4.293,36.512-13.561c12.137-12.125,11.771-27.323,7.771-36.653  C106.358,68.536,100.887,63.102,93.405,59.512z M65.823,85.445c-6.682,0.376-13.623-2.623-13.966-9.047  c-0.254-4.763,3.39-10.078,14.376-10.711c1.258-0.073,2.493-0.108,3.706-0.108c3.99,0,7.724,0.388,11.118,1.13  C79.79,82.519,72.365,85.086,65.823,85.445z"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></a>
-                <!-- X twitter -->
-                <a href="https://twitter.com/elchediac_toni?t=N6V-4GtNVLOprTzuxoU5pg&s=09"><?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><path d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z"/></svg></a>
-            </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Tony Al Chediac</span></h1>
+            <h2>Software Engineer</h2>
+            <p>Building innovative solutions through code</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate software engineer with expertise in building scalable and efficient applications. My journey in technology has been driven by a constant desire to learn and create meaningful solutions.</p>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- about section -->
-      <section id="About">
-            <div class="container-title">
-                <div class="container-title-content">
-                    <h1>ABOUT</h1>
-                    <h2>ABOUT ME</h2>
-                </div>
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Web Development Projects</h3>
+                <p>Arab Open University – LB Website for IEEE Student Branch, Online Menu Website with ordering features, POS System Website, Coffee Shop Menu Website, Portfolio Websites, Resort Hotel Website, Tree of Links System, Guide Website, and FIDS for airport.</p>
+                <a href="#" class="project-link">View Projects</a>
             </div>
-            <div class="about-container">
-                <div class="about-col1-content">
-                    <img src="images/about.jpg" alt="">
-                </div>
-                <div class="about-col2-content">
-                    <p class="about-intro-title">Let Me Introduce Myself</p>
-                    <p class="about-text-info">I am from Assia a village in high mountains of Batroun district.
-                        <b>Webmaster of IEEE AOU - Lebanon</b>. I am an enthusiastic science and engineering student.
-                        Deeply passionate in programming and engineering,
-                        with a passionate to explore the intricacies of thesedisciplines,
-                        I find my happiness in coding and solve his problems and error,
-                        and uncovering the principles that shape our world from A to Z,
-                        I am also actively working to get informations specializing in machinelearning - ml,
-                        contribute safeguarding digital systems and information.
-                        Through my career as a student, I continuously strive to expand my skills,
-                        and make meaningful contributions to the ever-evolving fields of science and technology.
-                    </p>
-                    <div class="about-more-details">
-                        <p style="margin-right: 10px;">Name: </p>
-                        <p>Tony Al Chediac</p>
-                    </div>
-                    <div class="about-more-details">
-                        <p style="margin-right: 10px;">Email: </p>
-                        <p>tonialchediac@gmail.com</p>
-                    </div>
-                    <div class="about-more-details">
-                        <p style="margin-right: 10px;">Birthday: </p>
-                        <p>1 November 2003</p>
-                    </div>
-                    <div class="about-more-details">
-                        <p style="margin-right: 10px;">Phone: </p>
-                        <p>+961 71 096 971</p>
-                    </div>
-                    <div class="about-more-details">
-                        <p style="margin-right: 10px;">Freelance: </p>
-                        <p>Available</p>
-                    </div>
-                    <a href="tel:+96171096971" class="hire-me-home-button"><button>Hire Me</button></a>
-                    <a href="#Contact" class="hire-me-home-button"><button>Contact Us</button></a>
-                </div>
+            <div class="project-card">
+                <h3>Java Applications</h3>
+                <p>ZOREX POS System for takeaway restaurants, LYNEX POS System for open table restaurants, Hospital Management System (HMS), and Tic-tac-toe game developed using Java and Sketchware.</p>
+                <a href="#" class="project-link">View Projects</a>
             </div>
-      </section>
-      
-     <!-- skills section -->
-        <section id="Skills">
-            <div class="container-title">
-                <div class="container-title-content">
-                    <h1>SKILLS</h1>
-                    <h2>SKILLS</h2>
-                </div>
+            <div class="project-card">
+                <h3>Other Systems</h3>
+                <p>Check In & Check Out workers system developed using Excel for efficient employee time tracking and management.</p>
+                <a href="#" class="project-link">View Project</a>
             </div>
-            <div class="skills-container">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 5.28125 2 C 4.765625 2.09375 4.410156 2.574219 4.46875 3.09375 L 8 42.53125 C 8.046875 42.933594 8.332031 43.265625 8.71875 43.375 L 24.71875 47.96875 C 24.902344 48.023438 25.097656 48.023438 25.28125 47.96875 L 41.28125 43.375 C 41.667969 43.265625 41.953125 42.933594 42 42.53125 L 45.53125 3.09375 C 45.558594 2.8125 45.464844 2.535156 45.273438 2.324219 C 45.082031 2.117188 44.8125 2 44.53125 2 L 5.46875 2 C 5.4375 2 5.40625 2 5.375 2 C 5.34375 2 5.3125 2 5.28125 2 Z M 6.5625 4 L 43.4375 4 L 40.09375 41.65625 L 25 45.9375 L 9.90625 41.65625 Z M 12.53125 10.0625 C 12.015625 10.15625 11.660156 10.636719 11.71875 11.15625 L 13.0625 25.9375 C 13.09375 26.453125 13.515625 26.859375 14.03125 26.875 L 30 26.875 L 29.5625 31.46875 L 25.03125 32.4375 L 20.4375 31.46875 L 20.28125 29.84375 C 20.25 29.316406 19.808594 28.90625 19.28125 28.90625 L 14.40625 28.90625 C 14.125 28.90625 13.855469 29.023438 13.664063 29.230469 C 13.472656 29.441406 13.378906 29.71875 13.40625 30 L 13.96875 36.125 C 14 36.527344 14.269531 36.875 14.65625 37 L 24.59375 40.03125 L 24.71875 40.0625 C 24.902344 40.117188 25.097656 40.117188 25.28125 40.0625 L 35.34375 37 C 35.742188 36.886719 36.027344 36.539063 36.0625 36.125 L 37.375 21.09375 C 37.402344 20.816406 37.3125 20.542969 37.128906 20.335938 C 36.945313 20.128906 36.683594 20.007813 36.40625 20 L 19.375 20 L 19.125 16.90625 L 36.84375 16.90625 C 37.363281 16.910156 37.796875 16.515625 37.84375 16 L 38.28125 11.15625 C 38.308594 10.875 38.214844 10.597656 38.023438 10.386719 C 37.832031 10.179688 37.5625 10.0625 37.28125 10.0625 L 12.71875 10.0625 C 12.65625 10.054688 12.59375 10.054688 12.53125 10.0625 Z M 13.8125 12.0625 L 36.1875 12.0625 L 35.9375 14.90625 L 18.03125 14.90625 C 17.75 14.90625 17.480469 15.023438 17.289063 15.230469 C 17.097656 15.441406 17.003906 15.71875 17.03125 16 L 17.5 21.09375 C 17.546875 21.597656 17.964844 21.988281 18.46875 22 L 35.3125 22 L 34.125 35.28125 L 25 38.03125 L 15.875 35.28125 L 15.5 30.90625 L 18.375 30.90625 L 18.5 32.375 C 18.53125 32.816406 18.847656 33.183594 19.28125 33.28125 L 24.84375 34.4375 C 24.976563 34.464844 25.117188 34.464844 25.25 34.4375 L 30.71875 33.28125 C 31.152344 33.183594 31.46875 32.816406 31.5 32.375 L 32.09375 25.9375 C 32.109375 25.660156 32.011719 25.390625 31.824219 25.191406 C 31.632813 24.988281 31.371094 24.875 31.09375 24.875 L 14.9375 24.875 Z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="50px" height="50px"><path d="M 6 4 L 8 25 L 16 28 L 24 25 L 26 4 L 6 4 z M 9.3320312 7 L 22.652344 7 L 22.390625 10 L 16.695312 13 L 19.121094 13 L 22 13 L 22.123047 13 L 21.611328 19.007812 L 21.630859 19 L 21.355469 22 L 16 24 L 10.634766 22 L 10.304688 18 L 13.326172 18 L 13.482422 20.033203 L 16 20.904297 L 18.521484 20.050781 L 18.867188 16 L 10.130859 16 L 9.8730469 13 L 15.783203 10 L 9.609375 10 L 9.3320312 7 z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 28.1875 0 C 30.9375 6.363281 18.328125 10.292969 17.15625 15.59375 C 16.082031 20.464844 24.648438 26.125 24.65625 26.125 C 23.355469 24.109375 22.398438 22.449219 21.09375 19.3125 C 18.886719 14.007813 34.535156 9.207031 28.1875 0 Z M 36.5625 8.8125 C 36.5625 8.8125 25.5 9.523438 24.9375 16.59375 C 24.6875 19.742188 27.847656 21.398438 27.9375 23.6875 C 28.011719 25.558594 26.0625 27.125 26.0625 27.125 C 26.0625 27.125 29.609375 26.449219 30.71875 23.59375 C 31.949219 20.425781 28.320313 18.285156 28.6875 15.75 C 29.039063 13.324219 36.5625 8.8125 36.5625 8.8125 Z M 19.1875 25.15625 C 19.1875 25.15625 9.0625 25.011719 9.0625 27.875 C 9.0625 30.867188 22.316406 31.089844 31.78125 29.25 C 31.78125 29.25 34.296875 27.519531 34.96875 26.875 C 28.765625 28.140625 14.625 28.28125 14.625 27.1875 C 14.625 26.179688 19.1875 25.15625 19.1875 25.15625 Z M 38.65625 25.15625 C 37.664063 25.234375 36.59375 25.617188 35.625 26.3125 C 37.90625 25.820313 39.84375 27.234375 39.84375 28.84375 C 39.84375 32.46875 34.59375 35.875 34.59375 35.875 C 34.59375 35.875 42.71875 34.953125 42.71875 29 C 42.71875 26.296875 40.839844 24.984375 38.65625 25.15625 Z M 16.75 30.71875 C 15.195313 30.71875 12.875 31.9375 12.875 33.09375 C 12.875 35.417969 24.5625 37.207031 33.21875 33.8125 L 30.21875 31.96875 C 24.351563 33.847656 13.546875 33.234375 16.75 30.71875 Z M 18.1875 35.9375 C 16.058594 35.9375 14.65625 37.222656 14.65625 38.1875 C 14.65625 41.171875 27.371094 41.472656 32.40625 38.4375 L 29.21875 36.40625 C 25.457031 37.996094 16.015625 38.238281 18.1875 35.9375 Z M 11.09375 38.625 C 7.625 38.554688 5.375 40.113281 5.375 41.40625 C 5.375 48.28125 40.875 47.964844 40.875 40.9375 C 40.875 39.769531 39.527344 39.203125 39.03125 38.9375 C 41.933594 45.65625 9.96875 45.121094 9.96875 41.15625 C 9.96875 40.253906 12.320313 39.390625 14.5 39.8125 L 12.65625 38.75 C 12.113281 38.667969 11.589844 38.636719 11.09375 38.625 Z M 44.625 43.25 C 39.226563 48.367188 25.546875 50.222656 11.78125 47.0625 C 25.542969 52.695313 44.558594 49.535156 44.625 43.25 Z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 25 2 C 20.941406 2 18.1875 2.96875 16.4375 4.375 C 14.6875 5.78125 14 7.589844 14 9.09375 L 14 14 L 24 14 L 24 15 L 9.09375 15 C 7.265625 15 5.410156 15.792969 4.09375 17.46875 C 2.777344 19.144531 2 21.644531 2 25 C 2 28.355469 2.777344 30.855469 4.09375 32.53125 C 5.410156 34.207031 7.265625 35 9.09375 35 L 14 35 L 14 40.90625 C 14 42.410156 14.6875 44.21875 16.4375 45.625 C 18.1875 47.03125 20.941406 48 25 48 C 29.058594 48 31.8125 47.03125 33.5625 45.625 C 35.3125 44.21875 36 42.410156 36 40.90625 L 36 36 L 26 36 L 26 35 L 40.90625 35 C 42.734375 35 44.589844 34.207031 45.90625 32.53125 C 47.222656 30.855469 48 28.355469 48 25 C 48 21.644531 47.222656 19.144531 45.90625 17.46875 C 44.589844 15.792969 42.734375 15 40.90625 15 L 36 15 L 36 9.09375 C 36 7.550781 35.316406 5.738281 33.5625 4.34375 C 31.808594 2.949219 29.054688 2 25 2 Z M 25 4 C 28.746094 4 31.015625 4.875 32.3125 5.90625 C 33.609375 6.9375 34 8.136719 34 9.09375 L 34 21 C 34 22.65625 32.65625 24 31 24 L 19 24 C 16.941406 24 15.167969 25.269531 14.40625 27.0625 C 14.277344 27.359375 14.160156 27.675781 14.09375 28 C 14.027344 28.324219 14 28.65625 14 29 L 14 33 L 9.09375 33 C 7.824219 33 6.648438 32.503906 5.6875 31.28125 C 4.726563 30.058594 4 28.042969 4 25 C 4 21.957031 4.726563 19.941406 5.6875 18.71875 C 6.648438 17.496094 7.824219 17 9.09375 17 L 26 17 L 26 12 L 16 12 L 16 9.09375 C 16 8.199219 16.386719 6.980469 17.6875 5.9375 C 18.988281 4.894531 21.257813 4 25 4 Z M 20 7 C 18.898438 7 18 7.898438 18 9 C 18 10.101563 18.898438 11 20 11 C 21.101563 11 22 10.101563 22 9 C 22 7.898438 21.101563 7 20 7 Z M 36 17 L 40.90625 17 C 42.175781 17 43.351563 17.496094 44.3125 18.71875 C 45.273438 19.941406 46 21.957031 46 25 C 46 28.042969 45.273438 30.058594 44.3125 31.28125 C 43.351563 32.503906 42.175781 33 40.90625 33 L 24 33 L 24 38 L 34 38 L 34 40.90625 C 34 41.800781 33.613281 43.019531 32.3125 44.0625 C 31.011719 45.105469 28.742188 46 25 46 C 21.257813 46 18.988281 45.105469 17.6875 44.0625 C 16.386719 43.019531 16 41.800781 16 40.90625 L 16 29 C 16 28.792969 16.023438 28.601563 16.0625 28.40625 C 16.34375 27.039063 17.550781 26 19 26 L 31 26 C 33.746094 26 36 23.746094 36 21 Z M 30 39 C 28.898438 39 28 39.898438 28 41 C 28 42.101563 28.898438 43 30 43 C 31.101563 43 32 42.101563 32 41 C 32 39.898438 31.101563 39 30 39 Z"/></svg>
-            </div>
-            <div class="skills-counting">
-                <div class="skills-frontend">
-                    <h1>Frontend</h1>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skills-backend">
-                    <h1>Backend</h1>
-                    <ul>
-                        <li>C++</li>
-                        <li>C#</li>
-                        <li>C</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-    <!-- education section -->
-        <section id="Education">
-            <div class="container-title">
-                <div class="container-title-content">
-                    <h1>EDUCATION</h1>
-                    <h2>EDUCATION</h2>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <div class="skill-items">
+                    <span>App Maker</span>
+                    <span>Microsoft Office</span>
+                    <span>Sketchware</span>
+                    <span>Binary Language</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Java</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                    <span>C Programming</span>
+                    <span>MARIE Language</span>
+                    <span>Flow Charts</span>
                 </div>
             </div>
-            <div class="education-container">
-                <div class="education-section-part">
-                    <h2>AOU - ARAB OPEN UNIVERSITY</h2>
-                    <h1>2023 - Present</h1>
-                </div>
-                <div class="education-section-part">
-                    <h2>LU - LEBANESE UNIVERSITY</h2>
-                    <h1>2022</h1>
-                </div>
-                <div class="education-section-part">
-                    <h2>BHS - BATROUN HIGH SCHOOL</h2>
-                    <h1>2019 - 2022</h1>
-                </div>
-                <div class="education-section-part">
-                    <h2>EAMS - ESTEPHAN ATTIEH SCHOOL</h2>
-                    <h1>2007 - 2019</h1>
-                </div>
-                <div class="education-section-part">
-                    <h2>PH - PROGRAMMING HUB</h2>
-                    <h1>2020 - Present</h1>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <div class="skill-items">
+                    <span>Excellent Communication</span>
+                    <span>Interpersonal Skills</span>
+                    <span>Attention to Detail</span>
+                    <span>Supportive Disposition</span>
+                    <span>Emotional Intelligence</span>
+                    <span>Self-Motivation</span>
+                    <span>Work Under Pressure</span>
+                    <span>Organization</span>
+                    <span>Decision Making</span>
+                    <span>Problem Solving</span>
+                    <span>Adaptability</span>
+                    <span>Quick Learning</span>
                 </div>
             </div>
-        </section>
-     </div>
+        </div>
+    </section>
 
-    <!-- portfolio section -->
-        <section id="Portfolio">
-            <div class="container-title">
-                <div class="container-title-content">
-                    <h1>PORTFOLIO</h1>
-                    <h2>PORTFOLIO</h2>
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-date">2023 - Present</div>
+                <div class="education-content">
+                    <h3>Arab Open University – AOU</h3>
+                    <h4>Lebanon Section</h4>
+                    <p>Currently pursuing higher education in Computer Science.</p>
                 </div>
             </div>
-            <div class="protfolio-container-title">
-                <h1>LET US DEEP ON IT</h1>
-                <h2>Everything you want</h2>
-            </div>
-            <div class="portfolio-container">
-                <div class="col-portfolio">
-                    <img src="images/ieee aou.png" alt="POS System">
-                    <h3>IEEE AOU</h3>
-                    <button><a href="#Contact">Learn More</a></button>
-                </div>
-                <div class="col-portfolio">
-                    <img src="images/pos.jpg" alt="POS System">
-                    <h3>POS System</h3>
-                    <button><a href="#Contact">Learn More</a></button>
-                </div>
-                <div class="col-portfolio">
-                    <img src="images/design.jpg" alt="POS System">
-                    <h3>Web Designer</h3>
-                    <button><a href="#Contact">Learn More</a></button>
-                </div>
-                <div class="col-portfolio">
-                    <img src="images/web dev.jpg" alt="POS System">
-                    <h3>Web Developer</h3>
-                    <button><a href="#Contact">Learn More</a></button>
-                </div>
-                <div class="col-portfolio">
-                    <img src="images/app creator.jpg" alt="POS System">
-                    <h3>App & Softwares Developer</h3>
-                    <button><a href="#Contact">Learn More</a></button>
+            <div class="education-item">
+                <div class="education-date">2022 - 2023</div>
+                <div class="education-content">
+                    <h3>Lebanese University - LU</h3>
+                    <p>Completed foundational studies in Computer Science.</p>
                 </div>
             </div>
-        </section>
+            <div class="education-item">
+                <div class="education-date">2019 - 2022</div>
+                <div class="education-content">
+                    <h3>Batroun Official Mixed High School</h3>
+                    <h4>S1 – s2s - SV</h4>
+                    <p>Completed secondary education with focus on scientific studies.</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-date">2020 - Present</div>
+                <div class="education-content">
+                    <h3>Google Developers Launchpad</h3>
+                    <h4>Programming hub</h4>
+                    <p>Ongoing professional development in programming and software development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- contact section -->
-        <section id="Contact">
-            <div class="container-title">
-                <div class="container-title-content">
-                    <h1>CONTACT US</h1>
-                    <h2>CONTACT US</h2>
+    <section id="certifications" class="certifications">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
                 </div>
+                <h3>HTML Certification</h3>
+                <p>Programming-hub</p>
+                <span class="certification-date">ID: 1679341084323</span>
             </div>
-            <div class="contact-container-title">
-                <h1>LET'S WE TALK</h1>
-                <h2>EVERYTHING YOU WANT TO</h2>
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>HTML Advanced Certification</h3>
+                <p>Programming-hub</p>
+                <span class="certification-date">ID: 1685829350316</span>
             </div>
-            <div class="contact-container">
-                <form id="contactForm">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <input type="text" id="address" name="address" placeholder="Your Address" required>
-                    <input type="tel" id="phone" name="phone" placeholder="+Code-Phone Number" required>
-                    <textarea id="message" name="message" cols="30" rows="10" placeholder="How can we help you?" required></textarea>
-                    <div class="btn-box formBtn">
-                        <button type="button" class="btn" onclick="sendMail()">Send Message</button>
-                        <div id="statusMessage" style="color: red; margin-top: 10px;"></div>
-                    </div>
-                </form>
-                
-                <script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
-                <script>
-                    (function() {
-                        emailjs.init("QUVaIP-QY2pkKySli");
-                    })();
-                
-                    function sendMail() {
-                        // Get all input fields and textarea
-                        let name = document.getElementById("name").value;
-                        let email = document.getElementById("email").value;
-                        let address = document.getElementById("address").value;
-                        let phone = document.getElementById("phone").value;
-                        let message = document.getElementById("message").value;
-                
-                        // Get the status message container
-                        let statusMessage = document.getElementById("statusMessage");
-                
-                        // Validate that all fields are filled
-                        if (name === "" || email === "" || address === "" || phone === "" || message === "") {
-                            statusMessage.textContent = "Please fill out all fields before sending the message.";
-                            statusMessage.style.color = "red";
-                            return; // Stop function execution if validation fails
-                        }
-                
-                        // Clear previous status message
-                        statusMessage.textContent = "Please wait...";
-                
-                        let params = {
-                            name: name,
-                            email: email,
-                            address: address,
-                            phone: phone,
-                            message: message
-                        };
-                
-                        emailjs.send("service_almgaw2", "template_ivf6mnm", params)
-                            .then(function(response) {
-                                statusMessage.textContent = "Your message has been sent successfully!";
-                                statusMessage.style.color = "green";
-                                document.getElementById("contactForm").reset();
-                            }, function(error) {
-                                statusMessage.textContent = "An error occurred. Please try again later.";
-                                statusMessage.style.color = "red";
-                                console.log("Error sending email:", error);
-                            });
-                    }
-                </script>
-                
-                
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>CSS Certification</h3>
+                <p>Programming-hub</p>
+                <span class="certification-date">ID: 1693919477425</span>
             </div>
-        </section>
-        
-    <!-- footer section -->
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>JavaScript Certification</h3>
+                <p>Programming-hub</p>
+                <span class="certification-date">ID: 1741437240851</span>
+            </div>
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>C Programming Certification</h3>
+                <p>Programming-hub</p>
+                <span class="certification-date">ID: 1694092685681</span>
+            </div>
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Python Certification</h3>
+                <p>Programming-hub</p>
+                <span class="certification-date">ID: 1733412877924</span>
+            </div>
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>JAVA Certification</h3>
+                <p>Programming-hub</p>
+                <span class="certification-date">ID: 1710278196127</span>
+            </div>
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>C++ Certification</h3>
+                <p>Programming-hub</p>
+                <span class="certification-date">ID: 1707814104620</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+
+            <form method="POST" id="contact-form">
+                <input type="hidden" name="access_key" value="b8aca320-a337-4198-9927-f1f41d5e87b7">
+                <input type="hidden" name="subject" value="Tony's Portfolio New Notification">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="number" name="number" placeholder="Phone Number" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit" class="submit-button">Send Message</button>
+            
+                <div id="result" style="display: none;"></div>
+            
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p cdslsk>Copyright &copy; 2023 by elchediac_tony || All Right Reserved.</p>
-      </footer>
-    
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                <div class="footer-social-links">
+                    <a href="https://github.com/Tonyelchediac"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/toni.chediac?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/elchediac_toni"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/elchediac_toni?t=zsg0bY8d4G3CEffC3upOLg&s=09&mx=2"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/toni-al-chediac-2b9787204/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/+96171096971"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.threads.net/@elchediac_toni" class="button" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Download CV</h3>
+                <p>Get a copy of my professional resume</p>
+                <a href="cvAndImages/TonyAlChediac-CV.pdf" class="download-cv-button" download="TonyAlChediac-CV.pdf">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tony Al Chediac. All rights reserved.</p>
+            <p>Designed and developed with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
 </body>
-</html>
+</html> 
