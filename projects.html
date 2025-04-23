@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony's Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="cvAndImages/pp.jpg" type="image/x-icon">
+    <style>
+        :root {
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+            --primary-color: #2563eb;
+            --secondary-color: #4f46e5;
+            --text-color: #1f2937;
+        }
+
+        .project-category {
+            margin-bottom: 5rem;
+        }
+
+        .project-category h2 {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            padding-top: 2rem;
+            color: var(--text-color);
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .project-category h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 3px;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+
+        .project-category:hover h2::after {
+            transform: scaleX(1);
+        }
+
+        .project-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .project-link-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .project-link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            transition: var(--transition);
+        }
+
+        .project-link-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-link-card:hover::before {
+            width: 100%;
+            opacity: 0.1;
+        }
+
+        .project-link-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .project-link-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: var(--transition);
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .project-link-card a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        .back-button {
+            text-decoration: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+        }
+
+
+        @media (max-width: 768px) {
+            .projects-container {
+                margin-top: 40px;
+                padding: 0 1rem;
+            }
+
+            .project-category h2 {
+                font-size: 1.8rem;
+            }
+
+            .project-link-card {
+                padding: 1.5rem;
+            }
+
+            .project-link-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .project-link-card a {
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .back-button {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="projects-container">
+        <div class="project-category" id="web-projects">
+            <h2>Web Development Projects</h2>
+            <div class="project-links">
+                <div class="project-link-card">
+                    <h3>IEEE Arab Open University – LB Website</h3>
+                    <a href="https://ieeeaou.github.io/ieee" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Project
+                    </a>
+                </div>
+                <div class="project-link-card">
+                    <h3>Online Menu Website</h3>
+                    <a href="https://tonyelchediac.github.io/onlineordermenu" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Project
+                    </a>
+                </div>
+                <div class="project-link-card">
+                    <h3>Coffee Shop Menu Website</h3>
+                    <a href="https://tonyelchediac.github.io/fauget" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Project
+                    </a>
+                </div>
+                <div class="project-link-card">
+                    <h3>Resort Hotel Website</h3>
+                    <a href="https://tonyelchediac.github.io/zaytounavillageresort" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Project
+                    </a>
+                </div>
+                <div class="project-link-card">
+                    <h3>Tree of Links System</h3>
+                    <a href="https://ieeeaou.github.io/txtree" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Project
+                    </a>
+                </div>
+                <div class="project-link-card">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <a href="https://tonyelchediac.github.io/rps" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-category" id="java-projects">
+            <h2>Java Applications</h2>
+            <div class="project-links">
+                <div class="project-link-card">
+                    <h3>ZOREX POS System - Beta</h3>
+                    <!-- <a href="https://github.com/Tonyelchediac/zorex.pos" target="_blank">View Project</a> -->
+                </div>
+                <div class="project-link-card">
+                    <h3>LYNEX POS System - Beta</h3>
+                    <!-- <a href="https://github.com/Tonyelchediac/LYNEX-POS" target="_blank">View Project</a> -->
+                </div>
+                <div class="project-link-card">
+                    <h3>Hospital Management System - Beta</h3>
+                    <!-- <a href="https://github.com/Tonyelchediac/Hospital-Management-System" target="_blank">View Project</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="project-category" id="other-projects">
+            <h2>Other Systems</h2>
+            <div class="project-links">
+                <div class="project-link-card">
+                    <h3>Check In & Check Out System</h3>
+                    <!-- <a href="https://github.com/Tonyelchediac/Check-In-Check-Out-System" target="_blank">View Project</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
