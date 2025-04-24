@@ -125,6 +125,12 @@ header {
     transform: translateY(-9px) rotate(-45deg);
 }
 
+a.glink img{
+    width: 25px !important;
+    margin-right: 0px !important;
+    padding: 5px !important;
+  }
+
 /* Hero Section */
 .hero {
     height: 100vh;
