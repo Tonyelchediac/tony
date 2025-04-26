@@ -36,7 +36,7 @@
             letter-spacing: -0.5px;
         }
 
-        .project-category h2::after {
+        /* .project-category h2::after {
             content: '';
             position: absolute;
             bottom: -15px;
@@ -48,7 +48,7 @@
             transform-origin: left;
             transform: scaleX(0);
             transition: transform 0.5s ease;
-        }
+        } */
 
         .project-category:hover h2::after {
             transform: scaleX(1);
@@ -291,6 +291,33 @@
                 });
             });
         });
+
+        // Add scroll progress indicator
+const progressBar = document.createElement('div');
+progressBar.className = 'progress-bar';
+document.body.appendChild(progressBar);
+
+window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    progressBar.style.width = scrolled + '%';
+});
+
+// Add styles for progress bar
+const style = document.createElement('style');
+style.textContent = `
+    .progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        z-index: 1001;
+        transition: width 0.1s ease;
+    }
+`;
+document.head.appendChild(style);
     </script>
 </body>
 
