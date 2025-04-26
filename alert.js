@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       width: "100%",
       height: "100%",
       backgroundColor: "rgba(0, 0, 0, 0.4)",
-      zIndex: 9998,
+      zIndex: 9,
     });
 
     // Create alert box
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       borderRadius: "10px",
       boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
       fontFamily: "sans-serif",
-      zIndex: 9999,
+      zIndex: 9,
       minWidth: "300px",
     });
 
