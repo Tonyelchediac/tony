@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   window.showCustomAlert = function () {
-    // Prevent multiple alerts
     if (document.querySelector(".custom-alert")) return;
 
-    // Create overlay
     const overlay = document.createElement("div");
     overlay.className = "custom-alert-overlay";
     Object.assign(overlay.style, {
@@ -16,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       zIndex: 9,
     });
 
-    // Create alert box
     const alertBox = document.createElement("div");
     alertBox.className = "custom-alert";
     Object.assign(alertBox.style, {
@@ -29,11 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
       borderRadius: "10px",
       boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
       fontFamily: "sans-serif",
-      zIndex: 9,
+      zIndex: 10,
       minWidth: "300px",
     });
 
-    // Create content container
+    document.body.style.overflow = "hidden";
+
     const content = document.createElement("div");
     Object.assign(content.style, {
       marginBottom: "20px",
@@ -42,13 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     content.textContent = "Due to policy you cannot use this feature.";
 
-    // Create button container
     const buttonContainer = document.createElement("div");
     Object.assign(buttonContainer.style, {
       textAlign: "right",
     });
 
-    // OK button
     const okButton = document.createElement("button");
     okButton.textContent = "OK";
     Object.assign(okButton.style, {
@@ -66,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
     okButton.addEventListener("click", () => {
       alertBox.remove();
       overlay.remove();
+      document.body.style.overflow = ""; // Restore scroll
     });
 
-    // Assemble alert box
     buttonContainer.appendChild(okButton);
     alertBox.appendChild(content);
     alertBox.appendChild(buttonContainer);
