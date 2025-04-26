@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       fontSize: "16px",
       color: "#333",
     });
-    content.textContent = "Due to policy you cannot use this feature.";
+    content.textContent = "The policy prevents you from using this feature because it uses real-time data.";
 
     const buttonContainer = document.createElement("div");
     Object.assign(buttonContainer.style, {
