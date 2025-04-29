@@ -80,6 +80,7 @@
             height: 100%;
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             transition: var(--transition);
+            pointer-events: none;
         }
 
         .project-link-card:hover {
@@ -144,7 +145,7 @@
             font-size: 1.2rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
-            z-index: 1000;
+            z-index: 10;
         }
 
         .back-button:hover {
@@ -258,7 +259,7 @@
                 </div>
                 <div class="project-link-card">
                     <h3>FIDS</h3>
-                    <a target="_blank" onclick="showCustomAlert(); return false;">
+                    <a href="#" target="_blank" onclick="showCustomAlert('The policy prevents you from using this feature because it uses real-time data.'); return false;">
                         <i class="fas fa-external-link-alt"></i> View Project
                     </a> 
                 </div>

@@ -907,3 +907,17 @@ footer {
         height: 15px;
     }
 } 
+
+
+
+
+.custom-alert {
+    width: 35%;
+    height: 20%;
+  }
+
+  @media (max-width: 768px) {
+    .custom-alert {
+      width: 90%;
+    }
+  }

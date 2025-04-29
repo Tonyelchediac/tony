@@ -1,74 +1,59 @@
 document.addEventListener("DOMContentLoaded", () => {
-  window.showCustomAlert = function () {
-    if (document.querySelector(".custom-alert")) return;
+  window.showCustomAlert = function (content) {
 
+    // Create the alert element
     const overlay = document.createElement("div");
     overlay.className = "custom-alert-overlay";
-    Object.assign(overlay.style, {
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.4)",
-      zIndex: 9,
-    });
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    overlay.style.zIndex = "9";
 
-    const alertBox = document.createElement("div");
-    alertBox.className = "custom-alert";
-    Object.assign(alertBox.style, {
-      position: "fixed",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      backgroundColor: "#fff",
-      padding: "20px 30px",
-      borderRadius: "10px",
-      boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
-      fontFamily: "sans-serif",
-      zIndex: 10,
-      minWidth: "300px",
-    });
+    // Create the alert element
+    const alert = document.createElement("div");
+    alert.className = "custom-alert";
+    alert.innerHTML = content;
+    
+    alert.style.position = "fixed";
+    alert.style.top = "50%";
+    alert.style.left = "50%";
+    alert.style.transform = "translate(-50%, -50%)";
+    alert.style.backgroundColor = "white";
+    alert.style.padding = "30px";
+    alert.style.borderRadius = "15px";
+    alert.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
+    //width and height in the styles.css file    
 
-    document.body.style.overflow = "hidden";
+    // Add the close button
+    const closeButton = document.createElement("button");
+    closeButton.className = "close-button";
+    closeButton.innerHTML = "close";
+    
+    closeButton.style.display = "block";
+    closeButton.style.padding = "10px 20px";
+    closeButton.style.position = "fixed";
+    closeButton.style.bottom = "10px";
+    closeButton.style.right = "10px";
+    closeButton.style.background = "linear-gradient(135deg, var(--primary-color), var(--secondary-color))";
+    closeButton.style.color = "white";
+    closeButton.style.border = "none";
+    closeButton.style.borderRadius = "15px";
+    closeButton.style.fontSize = "15px";
+    closeButton.style.cursor = "pointer";
+    closeButton.style.outline = "none";
+    closeButton.style.zIndex = "1";
 
-    const content = document.createElement("div");
-    Object.assign(content.style, {
-      marginBottom: "20px",
-      fontSize: "16px",
-      color: "#333",
-    });
-    content.textContent = "The policy prevents you from using this feature because it uses real-time data.";
 
-    const buttonContainer = document.createElement("div");
-    Object.assign(buttonContainer.style, {
-      textAlign: "right",
-    });
-
-    const okButton = document.createElement("button");
-    okButton.textContent = "OK";
-    Object.assign(okButton.style, {
-      padding: "8px 16px",
-      backgroundImage: "linear-gradient(135deg, #2563eb, #4f46e5)",
-      color: "#fff",
-      border: "none",
-      borderRadius: "5px",
-      fontSize: "14px",
-      cursor: "pointer",
-      outline: "none",
-      transition: "background 0.3s",
-    });
-
-    okButton.addEventListener("click", () => {
-      alertBox.remove();
+    closeButton.addEventListener("click", () => {
+      alert.remove();
       overlay.remove();
-      document.body.style.overflow = ""; // Restore scroll
     });
 
-    buttonContainer.appendChild(okButton);
-    alertBox.appendChild(content);
-    alertBox.appendChild(buttonContainer);
+    overlay.appendChild(alert);
+    alert.appendChild(closeButton);
     document.body.appendChild(overlay);
-    document.body.appendChild(alertBox);
   };
 });
