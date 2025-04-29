@@ -25,7 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     alert.style.padding = "30px";
     alert.style.borderRadius = "15px";
     alert.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
-    //width and height in the styles.css file    
+    //width and height in the styles.css file
+    
+    // overhidden the body
+    document.body.style.overflow = "hidden";
 
     // Add the close button
     const closeButton = document.createElement("button");
@@ -35,8 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     closeButton.style.display = "block";
     closeButton.style.padding = "10px 20px";
     closeButton.style.position = "fixed";
-    closeButton.style.bottom = "10px";
-    closeButton.style.right = "10px";
+    closeButton.style.bottom = "15px";
+    closeButton.style.right = "15px";
+    closeButton.style.textAlign = "center";
     closeButton.style.background = "linear-gradient(135deg, var(--primary-color), var(--secondary-color))";
     closeButton.style.color = "white";
     closeButton.style.border = "none";
@@ -50,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     closeButton.addEventListener("click", () => {
       alert.remove();
       overlay.remove();
+      document.body.style.overflow = "";
     });
 
     overlay.appendChild(alert);
