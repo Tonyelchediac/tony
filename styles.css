@@ -28,23 +28,23 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .navbar {
     background-color: var(--background);
-    padding: 1.2rem 3rem;
+    padding: .7rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(10px);
     transition: var(--transition);
-    z-index: 999;
+    z-index: 9;
 
 }
 
 .nav-brand {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
@@ -120,10 +120,11 @@ header {
 
 .hamburger.active span:nth-child(2) {
     opacity: 0;
+    transform: scale(3);
 }
 
 .hamburger.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-45deg);
 }
 
 a.glink img{
@@ -245,6 +246,26 @@ section h2::after {
     line-height: 1.8;
 }
 
+.about-text{
+    text-align: left;
+}
+
+.about-info-text{
+    text-align: left;
+    color: var(--light-text);
+    margin: 2rem 0;
+}
+
+.about-info-text a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.about-info-text a:hover {
+    text-decoration: underline;
+}
+
 /* Projects Section */
 .project-grid {
     display: grid;
@@ -256,7 +277,7 @@ section h2::after {
 
 .project-card {
     background: white;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
@@ -264,25 +285,17 @@ section h2::after {
     overflow: hidden;
 }
 
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: var(--transition);
+.project_title_p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--light-text);
+    margin-bottom: 5rem;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-}
-
-.project-card:hover::before {
-    transform: scaleX(1);
 }
 
 .project-card h3 {
@@ -751,18 +764,22 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem 2rem;
+        padding: 0.5rem 1.5rem;
+        height: 3.5rem;
+    }
+
+    .nav-brand {
+        font-size: 1.2rem;
     }
 
     .nav-links {
         background-color: var(--background);
         position: fixed;
-        top: 60px;
+        top: 50px;
         right: -100%;
         width: 70%;
-        height: auto;
+        height: 100dvh;
         flex-direction: column;
-        justify-content: center;
         padding: 2rem;
         backdrop-filter: blur(10px);
         transition: right 0.3s ease;
@@ -774,11 +791,13 @@ footer {
 
     .hamburger {
         display: flex;
+        width: 25px;
+        height: 16px;
     }
 
     .nav-links a {
-        font-size: 1.2rem;
-        padding: 1rem 0;
+        font-size: 1rem;
+        padding: 0.5rem 0;
         position: relative;
         width: 100%;
     }
@@ -795,11 +814,11 @@ footer {
     }
 
     .nav-links a:hover::after {
-        width: 100%;
+        width: 50%;
     }
 
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .hero-content h2 {
@@ -810,6 +829,11 @@ footer {
         padding: 5rem 1.5rem;
     }
 
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
     .project-grid {
         grid-template-columns: 1fr;
     }
@@ -818,19 +842,21 @@ footer {
         left: 30px;
     }
 
+    .education-content::before {
+        left: -30px !important;
+        width: 15px;
+        height: 15px;
+    }
+
     .education-item {
         width: 100%;
-        padding-left: 70px;
+        padding-left: 50px;
         text-align: left;
     }
 
     .education-item:nth-child(odd) {
         margin-left: 0;
         text-align: left;
-    }
-
-    .education-content::before {
-        left: -40px !important;
     }
 
     .certifications-grid {
@@ -866,46 +892,7 @@ footer {
         height: 40px;
         font-size: 1rem;
     }
-}
 
-@media (max-width: 480px) {
-    .navbar {
-        padding: 0.8rem 1.5rem;
-    }
-
-    .nav-brand {
-        font-size: 1.5rem;
-    }
-
-    .nav-links {
-        width: 100%;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
-
-    section h2 {
-        font-size: 2.5rem;
-    }
-
-    .cta-button {
-        padding: 1rem 2rem;
-    }
-
-    .education-item {
-        padding-left: 50px;
-    }
-
-    .education-content::before {
-        left: -30px !important;
-        width: 15px;
-        height: 15px;
-    }
 } 
 
 
