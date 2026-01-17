@@ -272,6 +272,10 @@ nav {
   gap: 10px;
 }
 
+.skill-item i{
+  color: var(--secondary);
+}
+
 .skill-icon {
   color: var(--secondary);
   font-size: 1.2rem;
